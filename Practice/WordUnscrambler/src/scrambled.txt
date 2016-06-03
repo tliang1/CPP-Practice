@@ -1,0 +1,10 @@
+mkeart
+sleewa
+edcudls
+iragoge
+usrlsle
+nalraoci
+nsdeuto
+amrhat
+inknsy
+iferkna
