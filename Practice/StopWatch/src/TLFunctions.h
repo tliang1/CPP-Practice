@@ -47,10 +47,12 @@ namespace TL
 	/// <returns>
 	/// Returns vector of strings that were delimited by the delimiter.
 	/// </returns>
-	static std::vector<std::string> &split(const std::string &s, const char delim, std::vector<std::string> &elems) {
+	static std::vector<std::string> &split(const std::string &s, const char delim, std::vector<std::string> &elems) 
+	{
 		std::stringstream ss(s);
 		std::string item;
-		while (getline(ss, item, delim)) {
+		while (getline(ss, item, delim)) 
+		{
 			if (!item.empty())
 			{
 				elems.push_back(item);
@@ -71,7 +73,8 @@ namespace TL
 	/// <returns>
 	/// Returns vector of strings that were delimited by the delimiter.
 	/// </returns>
-	static std::vector<std::string> split(const std::string &s, const char delim) {
+	static std::vector<std::string> split(const std::string &s, const char delim) 
+	{
 		std::vector<std::string> elems;
 		split(s, delim, elems);
 		return elems;

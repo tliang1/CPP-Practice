@@ -9,14 +9,17 @@
 using namespace std;
 
 // Overload () operator to compare the two strings' sizes
-struct Compare {
-	bool operator()(const string& firstWord, const string& secondWord) {
+struct Compare 
+{
+	bool operator()(const string& firstWord, const string& secondWord) 
+	{
 		return firstWord.size() < secondWord.size();
 	}
 };
 
 // Sort a string to be in ascending order
-void sortstring(string &s) {
+void sortstring(string &s) 
+{
 	sort(s.begin(), s.end());
 }
 

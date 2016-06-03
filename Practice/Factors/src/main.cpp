@@ -17,7 +17,8 @@ void printFactors(int number)
 {
 	int factor = smallestFactor(number);
 
-	while (factor != number) {
+	while (factor != number) 
+	{
 		std::cout << factor << " * ";
 		number /= factor;
 		factor = smallestFactor(number);

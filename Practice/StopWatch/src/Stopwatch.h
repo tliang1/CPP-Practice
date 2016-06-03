@@ -3,7 +3,8 @@
 
 #include <ctime>
 
-class Stopwatch {
+class Stopwatch 
+{
 	clock_t start_time = 0L;
 	bool running;
 	double elapsed_time = 0.0;

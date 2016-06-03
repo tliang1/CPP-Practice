@@ -12,7 +12,8 @@ using namespace std;
 /// <summary>
 /// Hangman game class.
 /// </summary>
-class Hangman {
+class Hangman 
+{
 private:
 	bool correct = false;
 	int tries = 0;

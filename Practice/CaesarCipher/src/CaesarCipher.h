@@ -6,7 +6,8 @@
 /// <summary>
 /// Caesar cipher class for encryption and decryption of alphabetic text.
 /// </summary>
-class Caesar_Cipher {
+class Caesar_Cipher 
+{
 public:
 	Caesar_Cipher() {}
 	
