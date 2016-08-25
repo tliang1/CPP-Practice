@@ -39,7 +39,9 @@ const int TLDate::getDayNumber(const string date)
 	{
 		dayNumber += daysForEachMonth[i];
 	}
-	dayNumber += ((year % 4 == 0) && (month > 2)) ? (day + 1) : day; // Add a day if the year is a leap year and the date is Feb 29 or above.
+
+	// Add a day if the year is a leap year and the date is Feb 29 or above.
+	dayNumber += ((((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) && (month > 2)) ? (day + 1) : day;
 
 	return dayNumber;
 }
@@ -75,7 +77,7 @@ bool TLDate::validDate(const string date)
 			if (month == numbers[0])
 			{
 				// Leap year
-				if ((month == 2) && (numbers[2] % 4 == 0))
+				if ((month == 2) && (((numbers[2] % 4 == 0) && (numbers[2] % 100 != 0)) || (numbers[2] % 400 == 0)))
 				{
 					if (numbers[1] <= (daysForEachMonth[month - 1] + 1))
 					{
