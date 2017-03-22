@@ -1,10 +1,10 @@
-#Caesar Cipher by Tony Liang
+# Caesar Cipher by Tony Liang
 
 Made using C++ 11 STL.
 
 Encryption and decryption of texts using a alphabetical caesar cipher. This cipher ignores numbers, symbols, and whitespace.
 
-#How To Use
+# How To Use
 
 1. Enter the encrypted or decrypted text.
 2. Enter the shift value (Range: -25 to 25).
