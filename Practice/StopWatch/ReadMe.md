@@ -2,7 +2,7 @@
 
 Made using C++ 11 STL.
 
-Basic stopwatch program. Lap times and total time are recorded and placed into the time.txt file(Location: same place as the source files.).
+Basic stopwatch program. Lap times and total time are recorded and placed into the time.txt file (Location: same place as the source files.).
 
 # How To Use
 
